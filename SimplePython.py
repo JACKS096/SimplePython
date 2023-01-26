@@ -1,22 +1,35 @@
+# define functions
+def add(x, y):
+   return x + y
 
-class Parrot:
+def subtract(x, y):
+   return x - y
 
-    
-    species = "птица"
+def multiply(x, y):
+   return x * y
 
-    
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+def divide(x, y):
+   return x / y
 
+ # take input from the user 
+print("Select operation.") 
+print("1.Add") 
+print("2.Subtract") 
+print("3.Multiply") 
+print("4.Divide") 
 
-kesha = Parrot(" еша", 10)
-cookie = Parrot(" уки", 15)
+ # Store input numbers 
+choice = input("Enter choice(1/2/3/4): ")
 
+ # Convert string to int for switch case 
+choice = int(choice)
 
-print(" еша Ч {}".format(kesha.__class__.species))
-print(" уки тоже {}".format(cookie.__class__.species))
-
-
-print("{} Ч {}-летний попугай".format(kesha.name, kesha.age))
-print("{} Ч {} летний попугай".format(cookie.name, cookie.age))
+ # Take two numbers from the user 
+num1 = float(input("Enter first number: ")) 
+num2 = float(input("Enter second number: "))
+if choice == 1:  print(num1,"+",num2,"=", add(num1,num2)) 
+elif choice == 2: print(num1,"-",num2,"=", subtract(num1,num2)) 
+elif choice == 3: print(num1,"*",num2,"=", multiply(num1,num2)) 
+elif choice == 4: print(num1,"/",num2,"=", divide(num1, num2)) 
+else: print("Invalid input")
+ 

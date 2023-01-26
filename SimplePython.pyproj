@@ -2,15 +2,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>7ca826a6-6d2b-44c9-8724-d32e7de329fa</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectGuid>e6b37046-88c3-47ea-b0ec-042d3a072cc1</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
     <StartupFile>SimplePython.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>SimplePython</Name>
-    <RootNamespace>SimplePython</RootNamespace>
+    <RootNamespace>PythonApplication</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,7 +23,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="SimplePython.py" />
-    <Compile Include="класс1.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
